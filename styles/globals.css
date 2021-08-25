@@ -15,8 +15,7 @@ a {
   box-sizing: border-box;
 }
 
-.container-sticky {
+.sticky {
   position: sticky!important;
   top: 0px;
-  transform: translateY(105%);
 }
