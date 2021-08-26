@@ -17,5 +17,57 @@ a {
 
 .sticky {
   position: sticky!important;
+  top: 0px!important;
+}
+
+/* Animations */
+
+.title {
+  top: 80px;
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+}
+.in-viewport .title {
   top: 0px;
+}
+
+.platform {
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .5s;
+}
+.in-viewport .platform {
+  opacity: 1;
+}
+
+.link svg {
+  left: -100%;
+  opacity: 0;
+  transition-delay: 1s;
+}
+.in-viewport .link svg {
+  left: 0%;
+  opacity: 1;
+}
+
+.link p {
+  left: -30%;
+  opacity: 0;
+  transition: .3s;
+  transition-delay: 1s;
+}
+.in-viewport .link p {
+  left: 0%;
+  opacity: 1;
+}
+
+.screens {
+  right: -30%;
+  opacity: 0;
+  transition: .3s;
+  transition-delay: 1.5s;
+}
+.in-viewport .screens {
+  right: 0%;
+  opacity: 1;
 }
