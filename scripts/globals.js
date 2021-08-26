@@ -8,13 +8,11 @@ function isInViewport(element) {
     );
 }
 
-let sections = document.querySelectorAll("section")
-let arrows_right = document.querySelectorAll(".link svg")
+let sections = document.querySelectorAll("section");
+let arrows_right = document.querySelectorAll(".link svg");
 
 sections.forEach(section => {
     if (isInViewport(section)) {
-        section.classList.add("in-viewport")
-        // let id = indexOf(section)
-        // arrows_right[id].classList.add("show")
+        section.classList.add("in-viewport");
     }
-})
+});
