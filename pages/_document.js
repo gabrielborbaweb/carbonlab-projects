@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
           <meta name="theme-color" content="#ED80DD" />
-          <script src="/scripts/global.js"></script>
+          <script src="/scripts/globals.js"></script>
         </Head>
         <body>
           <Main />
