@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import PlasmicLoader from '@plasmicapp/loader';
+import '../scripts/globals.js';
 
 export default function PageComponent() {
     return <PlasmicLoader projectId="tbwSPDBh94zbu5WULbgVc3" component="Projects"  />
