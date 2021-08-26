@@ -5,10 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charSet="utf-8" />
-          <link rel="icon" href="/favicon.ico" />
-          <meta name="theme-color" content="#ED80DD" />
-          <script src="/scripts/globals.js"></script>
+          <script src="/scripts/globals.js" type="text/javascript"></script>
         </Head>
         <body>
           <Main />
