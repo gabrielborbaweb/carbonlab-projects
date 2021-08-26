@@ -22,7 +22,7 @@ a {
 
 /* Animations */
 
-/* .title {
+.title {
   top: 80px;
   transition: .3s;
   transition-timing-function: ease-in-out;
@@ -70,4 +70,4 @@ a {
 .in-viewport .screens {
   right: 0%;
   opacity: 1;
-} */
+}
