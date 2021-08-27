@@ -1,4 +1,5 @@
-class ContactForm extends React.Component {
+// class ContactForm extends React.Component {
+const contactform = function {
   // constructor(props) {
   //   super(props);
   //   this.state = {
@@ -60,7 +61,4 @@ class ContactForm extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <ContactForm />,
-  document.getElementById('root')
-);
+export default contactform
