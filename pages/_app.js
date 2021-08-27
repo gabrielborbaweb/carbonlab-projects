@@ -1,14 +1,11 @@
 console.log("0 - app")
 
 import '../styles/globals.css';
-
 import snippet from '../scripts/globals.js';
 
 console.log("1 - app")
 
-window.onload = function() {
-  snippet();
-}
+snippet();
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
