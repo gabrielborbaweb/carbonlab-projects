@@ -21,7 +21,21 @@ a {
   top: 0!important;
 }
 
-/* Animations */
+/* ------------------ Animations */
+
+/* Intro */
+
+.down  {
+  opacity: 0;
+  top: -40px!important;
+  transition: .3s!important;
+  transition-timing-function: ease-in-out!important;
+}
+.in-viewport .down {
+  top: 0px!important;
+}
+
+/* Sections */
 
 .title {
   top: 80px!important;
@@ -77,3 +91,5 @@ a {
   bottom: 0%!important;
   opacity: 1!important;
 }
+
+/* ------------------ End Animations */
