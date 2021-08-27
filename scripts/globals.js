@@ -34,7 +34,7 @@
 
 const snippet = function() {
 
-    window.onload = function() {
+    // window.onload = function() {
         console.log("1 - load")
     
     // setTimeout(function() {
@@ -62,7 +62,7 @@ const snippet = function() {
 //     }, 1000)
         
 //     console.log("4 - final")
-    }
+    // }
 }
 // console.log("5 - final")
 
