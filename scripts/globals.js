@@ -42,27 +42,29 @@ const snippet = function() {
         
         function isInViewport(element) {
             console.log("3 - function")
-            // const rect = element.getBoundingClientRect();
-            // return (
-            //     rect.top >= 0 &&
-            //     rect.left >= 0 &&
-            //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            //     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            // );
-            window.addEventListener('scroll', function() {
-                var position = element.getBoundingClientRect();
+            // window.addEventListener('scroll', function() {
+            //     var position = element.getBoundingClientRect();
             
-                // checking whether fully visible
-                if(position.top >= 0 && position.bottom <= window.innerHeight) {
-                    console.log('Element is fully visible in screen');                
-                    element.classList.add("in-viewport");
-                }
+            //     // checking whether fully visible
+            //     if(position.top >= 0 && position.bottom <= window.innerHeight) {
+            //         console.log('Element is fully visible in screen');                
+            //         element.classList.add("in-viewport");
+            //     }
             
-                // checking for partial visibility
-                if(position.top < window.innerHeight && position.bottom >= 0) {
-                    console.log('Element is partially visible in screen');
-                }
-            });
+            //     // checking for partial visibility
+            //     if(position.top < window.innerHeight && position.bottom >= 0) {
+            //         console.log('Element is partially visible in screen');
+            //     }
+            // });
+
+            var observer = new IntersectionObserver(function(entries) {
+                // isIntersecting is true when element and viewport are overlapping
+                // isIntersecting is false when element and viewport don't overlap
+                if(entries[0].isIntersecting === true)
+                    console.log('Element has just become visible in screen');
+            }, { threshold: [0] });
+            
+            observer.observe(element);
         }
         
         let sections = document.querySelectorAll("section");
