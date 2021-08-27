@@ -33,6 +33,7 @@ a {
 }
 .in-viewport .down {
   top: 0px!important;
+  opacity: 1;
 }
 
 /* Sections */
