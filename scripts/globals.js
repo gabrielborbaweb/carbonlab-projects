@@ -8,7 +8,7 @@ const snippet = function() {
             var observer = new IntersectionObserver(function(entries) {
                 if(entries[0].isIntersecting === true)         
                 section.classList.add("in-viewport");
-            }, { threshold: [0] });
+            }, { threshold: [0.3] });
             
             observer.observe(section);
         });
