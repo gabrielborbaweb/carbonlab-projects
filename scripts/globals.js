@@ -52,6 +52,7 @@ const snippet = function() {
         // }
         
         let sections = document.querySelectorAll("section");
+        console.log(sections);
         
         // sections.forEach(section => {
         //     // if (isInViewport(section)) {
