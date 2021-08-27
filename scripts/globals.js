@@ -53,12 +53,12 @@ const snippet = function() {
         
         let sections = document.querySelectorAll("section");
         
-        sections.forEach(section => {
-            // if (isInViewport(section)) {
-            //     section.classList.add("in-viewport");
-            // }
-            console.log(section);
-        });
+        // sections.forEach(section => {
+        //     // if (isInViewport(section)) {
+        //     //     section.classList.add("in-viewport");
+        //     // }
+        //     console.log(section);
+        // });
             
 //     }, 1000)
         
