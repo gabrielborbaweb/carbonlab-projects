@@ -38,28 +38,28 @@ const snippet = function() {
         console.log("1 - load")
     
     setTimeout(function() {
-//         console.log("2 - timeout")
+        console.log("2 - timeout")
         
-        // function isInViewport(element) {
+        function isInViewport(element) {
             console.log("3 - function")
-            // const rect = element.getBoundingClientRect();
-            // return (
-            //     rect.top >= 0 &&
-            //     rect.left >= 0 &&
-            //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            //     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            // );
-        // }
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
         
         let sections = document.querySelectorAll("section");
         console.log(sections);
         
-        // sections.forEach(section => {
-        //     // if (isInViewport(section)) {
-        //     //     section.classList.add("in-viewport");
-        //     // }
-        //     console.log(section);
-        // });
+        sections.forEach(section => {
+            console.log(section);
+            if (isInViewport(section)) {
+                section.classList.add("in-viewport");
+            }
+        });
             
     }, 3000)
         
