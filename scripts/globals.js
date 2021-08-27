@@ -18,11 +18,6 @@ const snippet = function() {
 
         // Get In Touch
 
-        ReactDOM.render(
-            <ContactForm />,
-            document.getElementById('root')
-        );
-
         document.querySelectorAll(".getintouch").forEach(btn => {
             btn.addEventListener(onclick, function() {
                 document.querySelector("#form").classList.add("show");
