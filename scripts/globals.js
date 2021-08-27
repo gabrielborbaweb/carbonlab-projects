@@ -29,11 +29,11 @@
         
 //     console.log("4 - final")
 // }
-console.log("5 - glugs")
+// console.log("5 - glugs")
 
 
-// const snippet = function() {
-//     console.log("1 - load")
+const snippet = function() {
+    console.log("1 - load")
     
 //     setTimeout(function() {
 //         console.log("2 - timeout")
@@ -60,7 +60,7 @@ console.log("5 - glugs")
 //     }, 1000)
         
 //     console.log("4 - final")
-// }
+}
 // console.log("5 - final")
 
-// export default snippet
+export default snippet
