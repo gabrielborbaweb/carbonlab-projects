@@ -37,7 +37,7 @@ const snippet = function() {
     // window.onload = function() {
         console.log("1 - load")
     
-    // setTimeout(function() {
+    setTimeout(function() {
 //         console.log("2 - timeout")
         
         // function isInViewport(element) {
@@ -60,7 +60,7 @@ const snippet = function() {
         //     console.log(section);
         // });
             
-//     }, 1000)
+    }, 3000)
         
 //     console.log("4 - final")
     // }
