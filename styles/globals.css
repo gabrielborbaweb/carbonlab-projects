@@ -76,8 +76,8 @@ a {
   opacity: 1;
 }
 
-.link svg:hover,
-.link p:hover {
+.link:hover svg,
+.link:hover p {
   transition-delay: 0s;
 }
 
