@@ -63,12 +63,12 @@ a {
 }
 
 .screens {
-  right: -30%;
+  bottom: -30%;
   opacity: 0;
   transition: .3s;
   transition-delay: 1.5s;
 }
 .in-viewport .screens {
-  right: 0%;
+  bottom: 0%;
   opacity: 1;
 }
