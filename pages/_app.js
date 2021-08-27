@@ -5,10 +5,11 @@ import snippet from '../scripts/globals.js';
 
 console.log("1 - app")
 
-snippet();
-
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (<>
+    <Component {...pageProps} />
+    {snippet()}
+    </>)
 }
 
 console.log("2 - app")
