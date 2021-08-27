@@ -16,6 +16,7 @@ a {
 }
 
 .sticky {
+  position: -webkit-sticky!important;
   position: sticky!important;
   top: 0!important;
 }
