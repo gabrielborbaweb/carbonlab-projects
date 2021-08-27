@@ -19,7 +19,7 @@ const snippet = function() {
         // Get In Touch
 
         document.querySelectorAll(".getintouch").forEach(btn => {
-            btn.addEventListener(onclick, function() {
+            btn.addEventListener(click, function() {
                 document.querySelector("form").classList.add("show");
             });
         });

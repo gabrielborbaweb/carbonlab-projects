@@ -20,8 +20,9 @@ const ContactForm = function() {
   // }
 
   // render() {
-    return (
-      <form>
+    // return (
+    document.querySelector("form-block").innerHTML = 
+      `<form>
         <label>
           Your Name:
           <input
@@ -56,8 +57,8 @@ const ContactForm = function() {
           <textarea />
         </label>
         <input type="submit" value="Send" />
-      </form>
-    )
+      </form>`
+    // )
   // }
 }
 
