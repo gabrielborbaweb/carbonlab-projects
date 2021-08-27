@@ -1,5 +1,5 @@
 // class ContactForm extends React.Component {
-const contactform = function {
+const ContactForm = function() {
   // constructor(props) {
   //   super(props);
   //   this.state = {
@@ -19,7 +19,7 @@ const contactform = function {
   //   });
   // }
 
-  render() {
+  // render() {
     return (
       <form>
         <label>
@@ -57,8 +57,8 @@ const contactform = function {
         </label>
         <input type="submit" value="Send" />
       </form>
-    );
-  }
+    )
+  // }
 }
 
-export default contactform
+export default ContactForm
