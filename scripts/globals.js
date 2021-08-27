@@ -40,7 +40,7 @@ const snippet = function() {
     // setTimeout(function() {
 //         console.log("2 - timeout")
         
-        function isInViewport(element) {
+        // function isInViewport(element) {
             console.log("3 - function")
             // const rect = element.getBoundingClientRect();
             // return (
@@ -49,14 +49,15 @@ const snippet = function() {
             //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
             //     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             // );
-        }
+        // }
         
         let sections = document.querySelectorAll("section");
         
         sections.forEach(section => {
-            if (isInViewport(section)) {
-                section.classList.add("in-viewport");
-            }
+            // if (isInViewport(section)) {
+            //     section.classList.add("in-viewport");
+            // }
+            console.log(section);
         });
             
 //     }, 1000)
