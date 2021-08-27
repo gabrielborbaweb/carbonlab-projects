@@ -24,21 +24,21 @@ a {
 /* Animations */
 
 .title {
-  top: 80px;
-  transition: .3s;
-  transition-timing-function: ease-in-out;
+  top: 80px!important;
+  transition: .3s!important;
+  transition-timing-function: ease-in-out!important;
 }
 .in-viewport .title {
-  top: 0px;
+  top: 0px!important;
 }
 
 .platform {
-  opacity: 0;
-  transition: .3s;
-  transition-delay: .5s;
+  opacity: 0!important;
+  transition: .3s!important;
+  transition-delay: .5s!important;
 }
 .in-viewport .platform {
-  opacity: 1;
+  opacity: 1!important;
 }
 
 .link svg {
@@ -62,13 +62,18 @@ a {
   opacity: 1;
 }
 
+.link svg:hover,
+.link p:hover {
+  transition-delay: 0s;
+}
+
 .screens {
-  bottom: -30%;
-  opacity: 0;
-  transition: .3s;
-  transition-delay: 1.5s;
+  bottom: -30%!important;
+  opacity: 0!important;
+  transition: .3s!important;
+  transition-delay: 1.5s!important;
 }
 .in-viewport .screens {
-  bottom: 0%;
-  opacity: 1;
+  bottom: 0%!important;
+  opacity: 1!important;
 }
