@@ -20,11 +20,11 @@ const snippet = function() {
 
         document.querySelectorAll(".getintouch").forEach(btn => {
             btn.addEventListener(onclick, function() {
-                document.querySelector("#form").classList.add("show");
+                document.querySelector("form").classList.add("show");
             });
         });
         document.querySelector(".close").addEventListener(onclick, function() {
-            document.querySelector("#form").classList.remove("show");
+            document.querySelector("form").classList.remove("show");
         });
 
         // End Get In Touch
