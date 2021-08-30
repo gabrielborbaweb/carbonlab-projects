@@ -21,7 +21,10 @@ const ContactForm = function() {
 
   // render() {
     // return (
+  console.log("form");
   setTimeout(function() {
+
+  console.log("start form");
     document.querySelector("form-block").innerHTML = 
       `<form>
         <label>
@@ -59,6 +62,18 @@ const ContactForm = function() {
         </label>
         <input type="submit" value="SEND" />
       </form>`
+
+      console.log("end form");
+      document.querySelectorAll(".getintouch").forEach(btn => {
+        btn.addEventListener(click, function() {
+          console.log("click");
+          document.querySelector("form").classList.add("opened");
+        });
+      });
+      // document.querySelector(".close").addEventListener(click, function() {
+      //     document.querySelector("form").classList.remove("opened");
+      // });
+
     }, 1000);
     // )
   // }

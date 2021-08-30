@@ -15,19 +15,6 @@ const snippet = function() {
         });
 
         // End Animations
-
-        // Get In Touch
-
-        document.querySelectorAll(".getintouch").forEach(btn => {
-            btn.addEventListener(click, function() {
-                document.querySelector("form").classList.add("show");
-            });
-        });
-        // document.querySelector(".close").addEventListener(onclick, function() {
-        //     document.querySelector("form").classList.remove("show");
-        // });
-
-        // End Get In Touch
         
     }, 1000);
 

@@ -104,7 +104,7 @@ form {
   left: 0px;
   transition: 1s ease-in-out;
 }
-form.show {
+form.opened {
   opacity: 1;
   bottom: 0x;
 }
@@ -121,7 +121,7 @@ form textarea {
   padding: 10px 15px;
   margin-bottom: 10px;
   color: #ffffff80;
-  border-color: #ffffff80;
+  border: 1px solid #ffffff80;
   border-radius: 10px;
   background: transparent;
   transition: .3s ease-in-out;
