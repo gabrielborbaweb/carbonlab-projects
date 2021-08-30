@@ -74,7 +74,7 @@ const ContactForm = function() {
       //     document.querySelector("form").classList.remove("opened");
       // });
 
-    }, 1000);
+    }, 3000);
     // )
   // }
 }
