@@ -65,7 +65,7 @@ const ContactForm = function() {
 
       console.log("end form");
       document.querySelectorAll(".getintouch").forEach(btn => {
-        btn.addEventListener(click, function() {
+        btn.addEventListener("click", function() {
           console.log("click");
           document.querySelector("form").classList.add("opened");
         });
