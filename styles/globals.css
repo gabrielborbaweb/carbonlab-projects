@@ -99,16 +99,12 @@ a {
 
 form {
   opacity: 0;
-  position: absolute;
-  z-index: -1;
-  bottom: -100px;
-  left: 0px;
+  transform: translateY(100px);
   transition: 1s ease-in-out;
 }
 .opened form {
   opacity: 1;
-  z-index: 0;
-  bottom: 0x;
+  transform: translateY(0px);
 }
 
 form label {
