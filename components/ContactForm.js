@@ -24,53 +24,53 @@ const ContactForm = function() {
   console.log("form");
   setTimeout(function() {
 
-    console.log("start form");
-    document.querySelector("#form-block").innerHTML = 
-      `<form>
-        <label>
-          Your Name:
-          <input
-            name="name"
-            type="text"
-          />
-        </label>
-        <br />
-        <label>
-          Your Email:
-          <input
-            name="email"
-            type="mail"
-          />
-        </label>
-        <br />
-        <label>
-          Your Phone:
-          <input
-            name="phone"
-            type="tel"
-        />
-        </label>
-        <label>
-          Message:
-          <textarea />
-        </label>
-        <input type="submit" value="SEND" />
-      </form>`
+    // console.log("start form");
+    // document.querySelector("#form-block").innerHTML = 
+    //   `<form>
+    //     <label>
+    //       Your Name:
+    //       <input
+    //         name="name"
+    //         type="text"
+    //       />
+    //     </label>
+    //     <br />
+    //     <label>
+    //       Your Email:
+    //       <input
+    //         name="email"
+    //         type="mail"
+    //       />
+    //     </label>
+    //     <br />
+    //     <label>
+    //       Your Phone:
+    //       <input
+    //         name="phone"
+    //         type="tel"
+    //     />
+    //     </label>
+    //     <label>
+    //       Message:
+    //       <textarea />
+    //     </label>
+    //     <input type="submit" value="SEND" />
+    //   </form>`
 
-      console.log("end form");
+    //   console.log("end form");
       
-      function openForm() {
-        console.log("function");
-        document.querySelector("form").classList.add("opened");
-      }
+    //   function openForm() {
+    //     console.log("function");
+    //     document.querySelector("form").classList.add("opened");
+    //   }
 
-      document.querySelectorAll(".getintouch").forEach(btn => {
-        // btn.addEventListener("click", function() {
-        btn.onclick = function() { 
-          console.log("click");
-          openForm();
-        };
-      });
+    //   document.querySelectorAll(".getintouch").forEach(btn => {
+    //     // btn.addEventListener("click", function() {
+    //     btn.onclick = function() { 
+    //       console.log("click");
+    //       openForm();
+    //     };
+    //   });
 
     }, 3000);
     // )
