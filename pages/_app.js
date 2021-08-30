@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (<>
     <Component {...pageProps} />
     {snippet()}
-    <ContactForm/>
+    {ContactForm()}
     </>)
 }
 
