@@ -27,7 +27,6 @@ const ContactForm = function() {
     console.log("start form");
     document.querySelector("#form-block").innerHTML = 
       `<form>
-        <div class="form-close"></div>
         <label>
           Your Name:
           <input
@@ -59,16 +58,19 @@ const ContactForm = function() {
       </form>`
 
       console.log("end form");
+      
+      function openForm() {
+        console.log("function");
+        document.querySelector("form").classList.add("opened");
+      }
+
       document.querySelectorAll(".getintouch").forEach(btn => {
         // btn.addEventListener("click", function() {
-        btn.onclick = function() {
+        btn.onclick = function() { 
           console.log("click");
-          document.querySelector("form").classList.add("opened");
+          openForm();
         };
       });
-      // document.querySelector(".close").addEventListener(click, function() {
-      //     document.querySelector("form").classList.remove("opened");
-      // });
 
     }, 3000);
     // )
