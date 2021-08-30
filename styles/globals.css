@@ -115,6 +115,8 @@ form label {
   font-weight: 700;
   letter-spacing: 2px;
   color: #fff;
+  display: block;
+  text-align: center;
 }
 
 form input,
@@ -140,6 +142,12 @@ form input[type="submit"] {
   font-weight: 700;
   letter-spacing: 2px;
   color: #fff;
+}
+
+form .columns-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /* ------------------ End Form */

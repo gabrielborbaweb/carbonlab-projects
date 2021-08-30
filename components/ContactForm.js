@@ -8,13 +8,15 @@ const ContactForm = function() {
           <label for="name">Your Name</label>
           <input type="text" name="name" id="name" required>
         </div>
-        <div class="field">
-          <label for="email">Your Email</label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <div class="field">
-          <label for="phone">Your Phone</label>
-          <input type="tel" name="phone" id="phone" required>
+        <div class="columns-2">
+          <div class="field">
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Your Phone</label>
+            <input type="tel" name="phone" id="phone" required>
+          </div>
         </div>
         <div class="field">
           <label for="message">Message</label>
@@ -23,8 +25,8 @@ const ContactForm = function() {
       
         <input type="submit" id="button" value="SEND" >
       </form>
+      
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
       <script type="text/javascript">
         emailjs.init('user_FJXSeY8MrVjkBqdwgty5z')
       </script>`
