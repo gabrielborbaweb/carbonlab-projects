@@ -24,8 +24,8 @@ const ContactForm = function() {
   console.log("form");
   setTimeout(function() {
 
-  console.log("start form");
-    document.querySelector("form-block").innerHTML = 
+    console.log("start form");
+    document.querySelector("#form-block").innerHTML = 
       `<form>
         <label>
           Your Name:
