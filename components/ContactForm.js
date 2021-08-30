@@ -27,13 +27,12 @@ const ContactForm = function() {
     console.log("start form");
     document.querySelector("#form-block").innerHTML = 
       `<form>
+        <div class="form-close"></div>
         <label>
           Your Name:
           <input
             name="name"
             type="text"
-          //   value={this.state.value}
-          //   onChange={this.handleChange} 
           />
         </label>
         <br />
@@ -42,8 +41,6 @@ const ContactForm = function() {
           <input
             name="email"
             type="mail"
-          //   value={this.state.value}
-          //   onChange={this.handleChange} 
           />
         </label>
         <br />
@@ -52,8 +49,6 @@ const ContactForm = function() {
           <input
             name="phone"
             type="tel"
-          //   value={this.state.value}
-          //   onChange={this.handleChange} 
         />
         </label>
         <label>
@@ -65,10 +60,11 @@ const ContactForm = function() {
 
       console.log("end form");
       document.querySelectorAll(".getintouch").forEach(btn => {
-        btn.addEventListener("click", function() {
+        // btn.addEventListener("click", function() {
+        btn.onclick = function() {
           console.log("click");
           document.querySelector("form").classList.add("opened");
-        });
+        };
       });
       // document.querySelector(".close").addEventListener(click, function() {
       //     document.querySelector("form").classList.remove("opened");
